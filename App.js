@@ -27,6 +27,9 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import { StyleProvider } from 'native-base';
+import getTheme from './native-base-theme/components';
+
 import BottomTabNav from './App/Components/BottomTabNav';
 
 const Stack = createStackNavigator();
@@ -34,10 +37,12 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <>
+    {/* <StyleProvider style={getTheme()}> */}
       <StatusBar barStyle="dark-content" />
       <NavigationContainer>
         <BottomTabNav />
       </NavigationContainer>
+    {/* </StyleProvider> */}
     </>
   );
 };

@@ -3,6 +3,7 @@ import { SafeAreaView, View, Text, FlatList } from 'react-native';
 import VinylCard from '../Components/VinylCard';
 import { HomeScreenData } from '../Resources/placeholder_data/HomeScreenData';
 import style from '../Styles/style';
+import VinylCard1 from '../Components/VinylCard1';
 
 //Home screen is going to need to fetch data from who the user is following
 // 
